@@ -308,6 +308,7 @@ import handlers.voicedcommandhandlers.PvpZoneVCmd;
 import handlers.voicedcommandhandlers.RepairVCmd;
 import handlers.voicedcommandhandlers.TeleportsVCmd;
 import handlers.voicedcommandhandlers.Wedding;
+import handlers.voicedcommandhandlers.SevenRB;
 
 /**
  * Master handler.
@@ -661,6 +662,7 @@ public class MasterHandler
 		PingVCmd.class,
 		(Config.L2JMOD_ALLOW_WEDDING ? Wedding.class : null),
 		(GetRewardVoteSystemConfigs.ENABLE_VOTE_SYSTEM ? RewardVote.class : null),
+		SevenRB.class,
 	};
 	
 	private void loadHandlers(IHandler<?, ?> handler, Class<?>[] classes)
